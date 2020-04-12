@@ -1,0 +1,10 @@
+class AddCharacterTable < ActiveRecord::Migration[5.2]
+    def change
+        create_table :characters do |x|
+            x.string :name
+            x.integer :actor_id
+            x.integer :show_id
+        end
+    end
+
+end
